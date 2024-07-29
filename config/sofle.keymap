@@ -67,7 +67,7 @@
 &kp GRAVE &kp DE_N1    &kp DE_N2    &kp DE_N3      &kp DE_N4    &kp DE_N5                    &kp DE_N6    &kp DE_N7   &kp DE_N8    &kp DE_N9    &kp DE_N0    &kp F12
 &trans    &kp DE_EXCL  &kp DE_AT    &kp DE_HASH    &kp DE_DLLR  &kp DE_PRCNT                 &kp DE_CARET &kp DE_AMPS &kp DE_ASTRK &kp DE_LPAR  &kp DE_RPAR  &kp DE_PIPE
 &trans    &kp EXCL  &kp AT    &kp HASH    &kp DLLR  &kp PRCNT                 &kp CARET &kp AMPS &kp ASTRK &kp LPAR  &kp RPAR  &kp PIPE
-&trans    &kp DE_EQUAL &kp DE_MINUS &kp DE_PLUS    &kp DE_LBRC  &kp DE_RBRC   &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_SEMI  &kp DE_COLON &kp BSLH  &trans
+&trans    &kp DE_EQUAL &kp DE_MINUS &kp DE_PLUS    &kp DE_LBRC  &kp DE_RBRC   &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_SEMI  &kp DE_COLON &kp DE_BSLH  &trans
                     &trans    &trans      &trans    &trans     &trans &trans  &trans    &trans   &trans    &trans
 /*
 &trans    &kp F1       &kp F2       &kp F3         &kp F4       &kp F5                       &kp F6       &kp F7      &kp F8       &kp F9       &kp F10      &kp F11

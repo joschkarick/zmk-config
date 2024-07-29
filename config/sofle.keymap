@@ -16,9 +16,9 @@
 #define RAISE 2
 #define ADJUST 3
 
-&led_strip {
+/* &led_strip {
     chain-length = <12>;
-};
+}; */
 
 / {
 

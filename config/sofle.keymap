@@ -32,28 +32,28 @@
         tdcaps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ms = <200>;
+            tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
 
         tdumlauto: tap_dance_umlaut_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ms = <200>;
+            tapping-term-ms = <200>;
             bindings = <&kp DE_O>, <&kp DE_O_UMLAUT>;
         };
 
         tdumlautu: tap_dance_umlaut_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ms = <200>;
+            tapping-term-ms = <200>;
             bindings = <&kp DE_U>, <&kp DE_U_UMLAUT>;
         };
         
         tdumlauta: tap_dance_umlaut_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ms = <200>;
+            tapping-term-ms = <200>;
             bindings = <&kp DE_A>, <&kp DE_A_UMLAUT>;
         };
     };

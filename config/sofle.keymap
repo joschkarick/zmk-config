@@ -36,11 +36,11 @@
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
         
-        tdumlauta: tap_dance_umlaut_o {
+        tdumlauta: tap_dance_umlaut_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp DE_EXCL>, <&kp DE_O_UMLAUT>;
+            bindings = <&kp DE_EXCL>, <&kp DE_A_UMLAUT>;
         };
 
         tdumlautu: tap_dance_umlaut_u {
@@ -50,11 +50,11 @@
             bindings = <&kp DE_N7>, <&kp DE_U_UMLAUT>;
         };
         
-        tdumlauto: tap_dance_umlaut_a {
+        tdumlauto: tap_dance_umlaut_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp DE_N9>, <&kp DE_A_UMLAUT>;
+            bindings = <&kp DE_N9>, <&kp DE_O_UMLAUT>;
         };
     };
 

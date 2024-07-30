@@ -36,25 +36,25 @@
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
         
-        tdumlauto: tap_dance_umlaut_o {
+        tdumlauta: tap_dance_umlaut_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp DE_O>, <&kp DE_O_UMLAUT>;
+            tapping-term-ms = <170>;
+            bindings = <&kp DE_EXCL>, <&kp DE_O_UMLAUT>;
         };
 
         tdumlautu: tap_dance_umlaut_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp DE_U>, <&kp DE_U_UMLAUT>;
+            tapping-term-ms = <170>;
+            bindings = <&kp DE_N7>, <&kp DE_U_UMLAUT>;
         };
         
-        tdumlauta: tap_dance_umlaut_a {
+        tdumlauto: tap_dance_umlaut_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
-            bindings = <&kp DE_A>, <&kp DE_A_UMLAUT>;
+            tapping-term-ms = <170>;
+            bindings = <&kp DE_N9>, <&kp DE_A_UMLAUT>;
         };
     };
 
@@ -71,8 +71,8 @@
 //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
 &kp DE_GRAVE    &kp DE_N1       &kp DE_N2           &kp DE_N3       &kp DE_N4       &kp DE_N5                               &kp DE_N6   &kp DE_N7       &kp DE_N8       &kp DE_N9     &kp DE_N0   &none
-&kp ESC         &kp DE_Q        &kp DE_W            &kp DE_E        &kp DE_R        &kp DE_T                                &kp DE_Y    &tdumlautu      &kp DE_I        &tdumlauto    &kp DE_P    &kp BSPC
-&kp TAB         &tdumlauta      &kp DE_S            &kp DE_D        &kp DE_F        &kp DE_G                                &kp DE_H    &kp DE_J        &kp DE_K        &kp DE_L      &kp DE_SEMI &kp DE_SQT
+&kp ESC         &kp DE_Q        &kp DE_W            &kp DE_E        &kp DE_R        &kp DE_T                                &kp DE_Y    &kp DE_U        &kp DE_I        &kp DE_O      &kp DE_P    &kp BSPC
+&kp TAB         &kp DE_A        &kp DE_S            &kp DE_D        &kp DE_F        &kp DE_G                                &kp DE_H    &kp DE_J        &kp DE_K        &kp DE_L      &kp DE_SEMI &kp DE_SQT
 &tdcaps         &kp DE_Z        &kp DE_X            &kp DE_C        &kp DE_V        &kp DE_B        &kp C_MUTE  &none       &kp DE_N    &kp DE_M        &kp DE_COMMA    &kp DE_DOT    &kp DE_FSLH &kp RSHFT
                                 &kp LGUI            &kp LALT        &kp LCTRL       &mo LOWER       &kp RET     &kp SPACE   &mo RAISE   &kp RCTRL       &kp RALT        &kp RGUI
             >;
@@ -85,15 +85,15 @@
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-// |   `°  |  1! |  2" |  3§  |  4$  |  5%  |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
+// |   `   |  1! |  2" |  3§  |  4$  |  5%  |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
 // |       |  !! |  @  |  #'  |  $$  |  %%  |                   |  ^   |  &    |  *    |  ((  |   ))  |   |   |
-// |       |  == |  -_ |  +*  |  {   |  }   |        |  |       |  [   |  ]    |  ,;   |  .:  |   \ẞ  |       |
+// |       |  == |  -_ |  +*  |  {   |  }   |        |  |       |  [   |  ]    |  <>   |  >>  |   \ẞ  |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans          &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                       &kp F6       &kp F7      &kp F8       &kp F9       &kp F10      &kp F11
-&kp DE_GRAVE    &kp DE_N1       &kp DE_N2       &kp DE_N3       &kp DE_N4       &kp DE_N5                    &kp DE_N6    &kp DE_N7   &kp DE_N8    &kp DE_N9    &kp DE_N0    &kp F12
-&trans          &kp DE_EXCL     &kp DE_AT       &kp DE_HASH     &kp DE_DLLR     &kp DE_PRCNT                 &kp DE_CARET &kp DE_AMPS &kp DE_ASTRK &kp DE_LPAR  &kp DE_RPAR  &kp DE_PIPE
-&trans          &kp DE_EQUAL    &kp DE_MINUS    &kp DE_PLUS     &kp DE_LBRC     &kp DE_RBRC   &trans &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_LT    &kp DE_GT    &kp DE_BSLH  &trans
+&kp GRAVE       &kp DE_N1       &kp DE_N2       &kp DE_N3       &kp DE_N4       &kp DE_N5                    &kp DE_N6    &tdumlautu  &kp DE_N8    &tdumlauto   &kp DE_N0    &kp F12
+&trans          &tdumlauta      &kp DE_AT       &kp DE_HASH     &kp DE_DLLR     &kp DE_PRCNT                 &kp DE_CARET &kp DE_AMPS &kp DE_ASTRK &kp DE_LPAR  &kp DE_RPAR  &kp DE_PIPE
+&trans          &kp DE_EQUAL    &kp DE_MINUS    &kp DE_PLUS     &kp DE_LBRC     &kp DE_RBRC   &trans &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_LT    &kp DE_QMARK &kp DE_BSLH  &trans
                                 &trans          &trans          &trans          &trans        &trans &trans  &trans       &trans      &trans       &trans
             >;
 
@@ -106,13 +106,13 @@
 // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |       | INS  | PSCR | GUI   |       |      |                | PGUP | HOME |   ^   | END  |  PRSV |       |
 // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |  äÄ  |  öÖ   | üÜ   |  ß?   |       |
+// |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      | PRVS | PLAY  | NEXT |  ß?   |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                  &trans    &trans           &trans          &trans          &trans      &trans
-&trans          &kp INS         &kp PSCRN       &kp K_CMENU     &trans          &trans                        &kp PG_UP &kp HOME         &kp UP          &kp END         &kp PSCRN   &trans
-&trans          &kp LALT        &kp LCTRL       &kp LSHFT       &trans          &kp CLCK                      &kp PG_DN &kp LEFT         &kp DOWN        &kp RIGHT       &kp DEL     &kp BSPC
-&trans          &kp K_UNDO      &kp K_CUT       &kp K_COPY      &kp K_PASTE     &trans        &trans  &trans  &trans    &kp DE_A_UMLAUT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp MINUS   &trans
+&bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                  &trans    &trans           &trans          &trans         &trans      &trans
+&trans          &kp INS         &kp PSCRN       &kp K_CMENU     &trans          &trans                        &kp PG_UP &kp HOME         &kp UP          &kp END        &kp PSCRN   &trans
+&trans          &kp LALT        &kp LCTRL       &kp LSHFT       &trans          &kp CLCK                      &kp PG_DN &kp LEFT         &kp DOWN        &kp RIGHT      &kp DEL     &kp BSPC
+&trans          &kp K_UNDO      &kp K_CUT       &kp K_COPY      &kp K_PASTE     &trans        &trans  &trans  &trans    &kp C_PREV       &kp C_PP        &kp C_NEXT     &kp MINUS   &trans
                                 &trans          &trans          &trans          &trans        &trans  &trans  &trans    &trans    &trans   &trans
             >;
 
@@ -124,14 +124,14 @@
 // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  | USB  | BLE  | TOG   |      |       |       |
 // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
 // |        | RGB_BRD | RGB_BRI |         |         |         |                  |      |      |       |      |       |       |
-// |        |         |         |         |         |         | RGB_TOG | |      |      | PRVS | PLAY  | NEXT |       |       |
+// |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "adjust";
             bindings = <
 &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &out OUT_USB  &out OUT_BLE    &out OUT_TOG    &none &none &none
 &ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &none         &none           &none           &none &none &none
 &none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &none         &none           &none           &none &none &none
-&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none  &none         &kp C_PREV      &kp C_PP        &kp C_NEXT &none &none
+&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none  &none         &none           &none           &none &none &none
                                   &none           &none           &none           &none            &none           &none  &none         &none           &none           &none
             >;
         };

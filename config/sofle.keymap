@@ -32,28 +32,28 @@
         tdcaps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
         
         tdumlauta: tap_dance_umlaut_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp DE_EXCL>, <&kp DE_A_UMLAUT>;
         };
 
         tdumlautu: tap_dance_umlaut_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp DE_N7>, <&kp DE_U_UMLAUT>;
         };
         
         tdumlauto: tap_dance_umlaut_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <300>;
             bindings = <&kp DE_N9>, <&kp DE_O_UMLAUT>;
         };
     };
@@ -128,11 +128,11 @@
 //                    |         |         |         |         |         | |      |      |      |       |      |
             display-name = "adjust";
             bindings = <
-&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &out OUT_USB  &out OUT_BLE    &out OUT_TOG    &none &none &none
-&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &none         &none           &none           &none &none &none
-&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &none         &none           &none           &none &none &none
-&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none  &none         &none           &none           &none &none &none
-                                  &none           &none           &none           &none            &none           &none  &none         &none           &none           &none
+&bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                            &out OUT_USB  &none       &none         &kp KP_MULTIPLY &kp KP_MINUS &none
+&ext_power EP_TOG &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &rgb_ug RGB_EFF                         &out OUT_BLE  &kp DE_N7   &kp DE_N8     &kp DE_N9       &kp KP_PLUS  &none
+&none             &rgb_ug RGB_BRD &rgb_ug RGB_BRI &none           &none           &none                                   &out OUT_TOG  &kp DE_N4   &kp DE_N5     &kp DE_N6       &kp RET      &none
+&none             &none           &none           &none           &none           &none            &rgb_ug RGB_TOG &none  &none         &kp DE_N1   &kp DE_N2     &kp DE_N3       &none        &none
+                                  &none           &none           &none           &none            &none           &none  &none         &none       &none         &none
             >;
         };
 

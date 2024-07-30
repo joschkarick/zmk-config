@@ -4,13 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "keys_de.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_de.h"
 
 #define BASE 0
 #define LOWER 1
@@ -32,28 +32,28 @@
         tdcaps: tap_dance_shift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ns = <200>;
+            tapping-terms-ms = <200>;
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
 
         tdumlauto: tap_dance_umlaut_o {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ns = <200>;
+            tapping-terms-ms = <200>;
             bindings = <&kp DE_O>, <&kp DE_O_UMLAUT>;
         };
 
         tdumlautu: tap_dance_umlaut_u {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ns = <200>;
+            tapping-terms-ms = <200>;
             bindings = <&kp DE_U>, <&kp DE_U_UMLAUT>;
         };
         
         tdumlauta: tap_dance_umlaut_a {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-terms-ns = <200>;
+            tapping-terms-ms = <200>;
             bindings = <&kp DE_A>, <&kp DE_A_UMLAUT>;
         };
     };

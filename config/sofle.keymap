@@ -149,7 +149,7 @@
 &trans      &trans          &trans      &trans      &trans      &trans                              &trans      &trans              &trans      &trans              &trans      &trans
 &trans      &trans          &trans      &trans      &trans      &trans                              &trans      &kp DE_U_UMLAUT     &trans      &kp DE_O_UMLAUT     &trans      &trans
 &trans      &kp DE_A_UMLAUT &trans      &trans      &trans      &trans                              &trans      &trans              &trans      &trans              &trans      &trans
-&trans      &trans          &trans      &trans      &trans      &trans                              &trans      &trans              &trans      &trans              &trans      &trans
+&trans      &trans          &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans              &trans      &trans              &trans      &trans
                             &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans              &trans      &trans
             >;
         };

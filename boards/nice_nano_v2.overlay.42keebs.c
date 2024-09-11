@@ -31,20 +31,20 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <36>; /* number of LEDs */
+        chain-length = <36>; /* arbitrary; change at will */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
-        
+
         color-mapping = <
-                LED_COLOR_ID_GREEN
-                LED_COLOR_ID_RED
-                LED_COLOR_ID_BLUE
+            LED_COLOR_ID_GREEN
+            LED_COLOR_ID_RED
+            LED_COLOR_ID_BLUE
         >;
-  };
+    };
 };
 
 / {
-	chosen {
-		zmk,underglow = &led_strip;
-	};
+    chosen {
+        zmk,underglow = &led_strip;
+    };
 };

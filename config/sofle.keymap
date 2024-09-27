@@ -46,7 +46,7 @@
         spi-max-frequency = <4000000>;
 
         /* WS2812 */
-        chain-length = <14>; /* number of LEDs */
+        chain-length = <16>; /* number of LEDs */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
         
@@ -151,13 +151,13 @@
 // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // |       |  F6 |  F7 |  F8  |  F9  |  F10 |                   |  F11 |  F12  |  8(   |  9)  |   0=  |  F12  |
 // |       |  !  |  @  |  #'  |  -_  |  ~   |                   |  ^   |  &    |  *    |  ((  |   ))  |   |   |
-// |       |  == |  -_ |  +*  |  {   |  }   |        |  |       |  [   |  ]    |  <>   |  ?!  |   \ẞ  |       |
+// |       |  == |  == |  +*  |  {   |  }   |        |  |       |  [   |  ]    |  <>   |  ?!  |   \ẞ  |       |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans          &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                       &kp F6       &kp F7      &kp F8       &kp F9           &kp F10      &kp F11
 &kp GRAVE       &kp F6          &kp F7          &kp F8          &kp F9          &kp F10                      &kp F11      &kp F12     &kp DE_N8    &kp DE_N9        &kp DE_N0    &kp F12
 &trans          &kp DE_EXCL     &kp DE_AT       &kp DE_HASH     &kp DE_MINUS    &kp DE_TILDE                 &kp DE_CARET &kp DE_AMPS &kp DE_ASTRK &kp DE_LPAR      &kp DE_RPAR  &kp DE_PIPE
-&trans          &kp DE_EQUAL    &kp DE_MINUS    &kp DE_PLUS     &kp DE_LBRC     &kp DE_RBRC   &trans &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_LT    &morph_qm_excl   &kp DE_BSLH  &trans
+&trans          &kp DE_Y        &kp DE_EQUAL    &kp DE_PLUS     &kp DE_LBRC     &kp DE_RBRC   &trans &trans  &kp DE_LBKT  &kp DE_RBKT &kp DE_LT    &morph_qm_excl   &kp DE_BSLH  &trans
                                 &trans          &trans          &trans          &trans        &trans &trans  &trans       &trans      &trans       &trans
             >;
 

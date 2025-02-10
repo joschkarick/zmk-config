@@ -139,7 +139,8 @@
 &kp GRAVE       &kp DE_Q        &kp DE_W            &kp DE_E        &kp DE_R        &kp DE_T                                &kp DE_Y    &kp DE_U        &kp DE_I        &kp DE_O      &kp DE_P                  &kp BSPC
 &kp TAB         &kp DE_A        &kp DE_S            &kp DE_D        &kp DE_F        &kp DE_G                                &kp DE_H    &kp DE_J        &kp DE_K        &kp DE_L      &lt UMLAUTE DE_SHARP_S    &kp DE_SQT
 &tdcaps         &kp DE_Z        &kp DE_X            &kp DE_C        &kp DE_V        &kp DE_B        &kp C_MUTE  &none       &kp DE_N    &kp DE_M        &kp DE_COMMA    &kp DE_DOT    &kp DE_FSLH               &kp RSHFT
-                                &kp LGUI            &kp LALT        &kp LCTRL       &mo LOWER       &kp RET     &kp SPACE   &mo RAISE   &kp RCTRL       &kp RALT        &kp RGUI
+// WINDOWS:                     &kp LGUI            &kp LALT        &kp LCTRL       &mo LOWER       &kp RET     &kp SPACE   &mo RAISE   &kp RCTRL       &kp RALT        &kp RGUI
+                                &kp LCTRL           &kp LALT        &kp LGUI        &mo LOWER       &kp RET     &kp SPACE   &mo RAISE   &kp RGUI        &kp RALT        &kp RCTRL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;

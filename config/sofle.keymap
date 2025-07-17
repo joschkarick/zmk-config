@@ -127,7 +127,7 @@
             label = "ENCODER_SCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-            tap-ms = <20>; // Optional: Zu schnelle oder zu langsame Scrolls regulieren
+//            tap-ms = <20>; // Optional: Zu schnelle oder zu langsame Scrolls regulieren
         };
 
     };
